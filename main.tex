@@ -1,0 +1,41 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+
+\title{Assignment_1}
+\author{Vishal Mate}
+\date{August 2021}
+
+\begin{document}
+
+\section{Problem Statement}
+Find the area of the triangles for the following co-ordinate:\\
+(5,2), (-9,-3) and (-3,-5)
+
+\section{Solution}
+
+The vertices are:
+ $$a= \begin{bmatrix} 
+     5 & 2 
+  \end{bmatrix}$$
+ $$b= \begin{bmatrix} 
+    -9 & -3 
+  \end{bmatrix}$$
+ $$c =\begin{bmatrix} 
+    -3 & -5 
+  \end{bmatrix}$$
+  We find sides by matrix subtraction\\ 
+  $ sideab=(a-b)$\\
+  $$sideab= \begin{bmatrix} 
+     14 & 5 
+  \end{bmatrix}$$
+  $ sideac=(a-c)$\\
+    $$sideac= \begin{bmatrix} 
+     8 & 7 
+  \end{bmatrix}$$
+  Now Area of triangle is given by:\\
+  Area of triangle is half the area of parallelogram formed
+  $Area= \frac{1}{2}*sideab \times sideac$
+$$Area =0.5*\begin{vmatrix} 14 & 5 \\ 8 & 7 \end{vmatrix} $$
+$$Area = 29 $$
+\end{document}
